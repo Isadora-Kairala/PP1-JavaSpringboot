@@ -1,13 +1,10 @@
 package dc.unifacef.memoria.model;
 
 public class Produto {
-
     private Long id;
     private String nome;
     private Double preco;
     private Integer qtde;
-
-
 
     public Long getId() {
         return id;

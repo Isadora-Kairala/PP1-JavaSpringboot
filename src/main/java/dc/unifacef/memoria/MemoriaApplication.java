@@ -7,6 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class MemoriaApplication {
 
 	public static void main(String[] args) {
+
 		SpringApplication.run(MemoriaApplication.class, args);
 	}
 
