@@ -32,4 +32,19 @@ public class ProdutoService {
         return false;
     }
 
+
+    public Produto atualiza(Long id, Produto alterado){
+        if (repo.existsById(id)){
+
+            alterado.setId(id);
+            return repo.save(alterado);
+        }
+        return  null;
+    }
+
+
+    public Produto salva(Produto produto){
+        return repo.save(produto);
+    }
+
 }
