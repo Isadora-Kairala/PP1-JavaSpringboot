@@ -10,8 +10,10 @@ import java.util.Optional;
 
 @Service
 public class ProdutoService {
-    private ProdutoRepository repo;
+    private ProdutoRepository repo;  //service usa a classe de baixo na camada que usa o repository
 
+
+    //inicializou pelo construtor injecao de independencia pelo construtor
     public ProdutoService(ProdutoRepository repo){
         this.repo = repo;
     }
